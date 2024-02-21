@@ -1,33 +1,41 @@
 import reflex as rx
+import eolagueweb.constants as constants
 from eolagueweb.components.link_button import link_button
 from eolagueweb.components.title import title
 
+
 def links() -> rx.Component:
     return rx.vstack(
-        title("Mis Links"),
-        link_button("Github", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",  
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
+        title("Dev Links"),
         link_button("LinkedIn", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
+                    "Aqui puedes encontrar mi perfil profesional",  
+                    constants.LINKEDIN_URL),
+        link_button("Github", 
+                    "Mi repositorio de proyectos",
+                    constants.GITHUB_URL),
+
+        title("Sobre Mí"),
+        link_button("Instagram", 
+                    "Puedes ver algunas de mis fotos favoritas",  
+                    constants.INSTAGRAM_URL),
+        link_button("Facebook", 
+                    "Pasa a ver memes divertidos conmigo",  
+                    constants.FACEBOOK_URL),
+        link_button("Spotify", 
+                    "Intercambiemos música",  
+                    constants.SPOTIFY_URL),
+        link_button("Last.fm", 
+                    "Veamos que escuchamos juntos",  
+                    constants.LASTFM_URL),
+        link_button("Youtube", 
+                    "Ve mis jugadas favoritas en videojuegos",  
+                    constants.YOUTUBE_URL),
         link_button("Twitch", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
-        link_button("Discord", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
-        title("Mis Links"),
-        link_button("Github", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",  
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
-        link_button("Github", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",  
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
-        link_button("Github", 
-                    "TEXTooooooooooooooooooooooooooooooooooooooooooooooo",  
-                    "https://www.linkedin.com/in/efraim-olague-garay-8853b7193/"),
-        
+                    "Puedes verme perder partidas en vivo",  
+                    constants.TWITCH_URL),
+        link_button("Steam", 
+                    "Agregame y juguemos juntos",  
+                    constants.STEAM_URL),
         width="100%",
         spacing="4"
     )

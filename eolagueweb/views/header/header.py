@@ -15,7 +15,7 @@ def header() -> rx.Component:
                     size="7"
                 ),
                 rx.text(
-                    "@efraolague", 
+                    "@efraimolagueq", 
                     color="gray.500",
                     margin_top="0px !important",
                 ),
