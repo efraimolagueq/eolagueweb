@@ -2,6 +2,7 @@ import reflex as rx
 import datetime
 
 from eolagueweb.styles.styles import Size as Size
+from eolagueweb.styles.colors import Color, TextColor
 
 
 def footer() -> rx.Component:
@@ -17,7 +18,9 @@ def footer() -> rx.Component:
         rx.text(
             "CREATING SOFTWARE WITH ♥ FROM MEXICO.",
             font_size=Size.MEDIUM.value,
+            margin_top=Size.ZERO.value,
         ),
-        margin_bottom=Size.BIG.value,
+        padding_bottom=Size.BIG.value,
         align_items="center",
+        color=TextColor.FOOTER.value,
     )

@@ -1,15 +1,24 @@
-import reflex
+import reflex as rx
 from eolagueweb.styles.styles import Size  as Size
+from eolagueweb.styles.colors import Color, TextColor
 
-def navbar() -> reflex.Component:
-    return reflex.hstack(
-        reflex.text(
-                "EOlagueDev",
+def navbar() -> rx.Component:
+    return rx.hstack(
+        rx.box(
+            rx.chakra.span(
+                "EOlague",
+                color=Color.PRIMARY.value,
             ),
+            rx.chakra.span(
+                "Dev",
+                color=Color.SECONDARY.value,
+            ),
+        ),
+
         position="sticky",
-        bg="lightgray",
-        padding_x=Size.DEFAULT.value,
-        padding_y=Size.SMALL.value,
+        bg=Color.CONTENT.value,
+        padding_x=Size.BIG.value,
+        padding_y=Size.DEFAULT.value,
         z_index="999",
         top="0",
     )
