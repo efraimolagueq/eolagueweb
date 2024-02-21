@@ -1,14 +1,15 @@
 import reflex
+from eolagueweb.styles.styles import Size  as Size
 
 def navbar() -> reflex.Component:
     return reflex.hstack(
         reflex.text(
-                "Efra Olague Dev",
-                height="40px",
+                "EOlagueDev",
             ),
         position="sticky",
-        bg="blue",
-        padding_x="16px",
-        padding_y="8px",
-        z_index=999,
+        bg="lightgray",
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.SMALL.value,
+        z_index="999",
+        top="0",
     )
